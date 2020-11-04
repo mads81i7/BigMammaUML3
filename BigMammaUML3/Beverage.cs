@@ -14,9 +14,13 @@ namespace BigMammaUML3
             set { _isAlcoholic = value; }
         }
 
-        public Beverage(int number, string name, string description, double price, MenuType menuType, bool isVegan, bool isOrganic, bool isAlcoholic) : base(number, name, description, price, menuType, isVegan, isOrganic)
+        public Beverage(int number, string name, string description, double price, MenuType menuType, bool isVegan, bool isOrganic) : base(number, name, description, price, menuType, isVegan, isOrganic)
         {
-            _isAlcoholic = isAlcoholic;
+            if (menuType == MenuType.AlcoholicDrink )
+            {
+                _isAlcoholic = true;
+            }
+            
         }
 
         public override string PrintInfo()

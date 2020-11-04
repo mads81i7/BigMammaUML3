@@ -22,13 +22,13 @@ namespace BigMammaUML3
 
             IMenuItem p1 = new Pizza(1, "Pizza no.1", "alkjg", 75, MenuType.Pizza, true, false, false);
             IMenuItem p1New = new Pizza(1, "Updated Pizza no. 1", "This pizza was updated", 75, MenuType.Pizza, true, true, true);
-            IMenuItem p2 = new Pizza(2, "Pizza no.2", "the most expensive", 100, MenuType.Pizza, true, false, false);
-            IMenuItem p3 = new Pizza(3, "Pizza no.3", "The second most expensive", 90, MenuType.Pizza, true, false, false);
+            IMenuItem p2 = new Pizza(2, "Pizza no.2", "The pizza to be deleted", 100, MenuType.Pizza, true, false, false);
+            IMenuItem p3 = new Pizza(3, "Pizza no.3", "The most expensive", 100, MenuType.Pizza, true, false, false);
             IMenuItem p4 = new Pizza(4, "Organic pizza", "This pizza is Organic", 80, MenuType.Pizza, false, true, true);
             IMenuItem p4ExpTest = new Pizza(4, "Exception pizza", "This pizza should catch an exception", 80, MenuType.Pizza, false, true, true);
 
-            IMenuItem b1 = new Beverage(5, "Øl", "det er øl", 35, MenuType.AlcoholicDrink, false, true, true);
-            IMenuItem b2 = new Beverage(6, "cola", "det er cola", 20, MenuType.SoftDrink, true, false, false);
+            IMenuItem b1 = new Beverage(5, "Øl", "det er øl", 35, MenuType.AlcoholicDrink, false, true);
+            IMenuItem b2 = new Beverage(6, "Cola", "det er cola", 20, MenuType.SoftDrink, true, false);
 
             IMenuItem pasta1 = new Pasta(7, "Bolognese", "Something", 90.50, MenuType.Pasta, false, true, PastaType.Spaghetti);
             IMenuItem pasta2 = new Pasta(8, "Big Mamma special", "Spinach and ricotta", 80, MenuType.Pasta, true, true, PastaType.Ravioli);
